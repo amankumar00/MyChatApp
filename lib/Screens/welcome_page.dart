@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'registration_page.dart';
 
 class WelcomePage extends StatefulWidget {
-  static String id = '/WelcomeScreen';
+  static String id = '/k';
   @override
   _WelcomePageState createState() => _WelcomePageState();
 }
@@ -13,7 +13,6 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0x2B2C32),
       body: SafeArea(
         child: Center(
           child: Container(

@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        backgroundColor: Color(0x2B2C32),
+        scaffoldBackgroundColor: Color(0xFF2B2C32),
       ),
       initialRoute: '/',
       routes: {
         WelcomePage.id: (context) => WelcomePage(),
         ChatScreen.id: (context) => ChatScreen(),
         RegistrationPage.id: (context) => RegistrationPage(),
-        ChatScreen.id: (context) => ChatHeadsScreen(),
+        ChatHeadsScreen.id: (context) => ChatHeadsScreen(),
       },
     );
   }
