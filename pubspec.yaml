@@ -45,4 +45,7 @@ flutter:
     - family: FreeDokaOne
       fonts:
         - asset: fonts/Fredoka_One/FredokaOne-Regular.ttf
+    - family: Leckerli
+      fonts:
+        - asset: fonts/Leckerli_One/LeckerliOne-Regular.ttf
 

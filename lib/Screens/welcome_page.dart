@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'registration_page.dart';
 
 class WelcomePage extends StatefulWidget {
-  static String id = '/';
+  static String id = '/WelcomeScreen';
   @override
   _WelcomePageState createState() => _WelcomePageState();
 }
@@ -17,6 +18,7 @@ class _WelcomePageState extends State<WelcomePage> {
         child: Center(
           child: Container(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -25,11 +27,14 @@ class _WelcomePageState extends State<WelcomePage> {
                       'mychat',
                       style: TextStyle(
                         fontSize: 40,
-                        fontFamily: 'FreeDokaOne',
+                        fontFamily: 'Leckerli',
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    Image.asset('images/icon/icons8-chat-48.png'),
+                    Hero(
+                      tag: 'logo',
+                      child: Image.asset('images/icon/icons8-chat-48.png'),
+                    ),
                   ],
                 ),
                 RawMaterialButton(

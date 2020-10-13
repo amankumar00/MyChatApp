@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ChatHeadsScreen extends StatefulWidget {
-  static String id = 'ChatHeadsScreen';
+  static String id = '/';
   @override
   _ChatHeadsScreenState createState() => _ChatHeadsScreenState();
 }
