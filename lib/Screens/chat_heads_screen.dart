@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
 class ChatHeadsScreen extends StatefulWidget {
-  static String id = '/';
+  static String id = '/ChatHeadsScreen';
 
   @override
   _ChatHeadsScreenState createState() => _ChatHeadsScreenState();
@@ -24,7 +24,7 @@ class _ChatHeadsScreenState extends State<ChatHeadsScreen> {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black54,
-                        blurRadius: 20.0,
+                        blurRadius: 10.0,
                       ),
                     ],
                   ),
