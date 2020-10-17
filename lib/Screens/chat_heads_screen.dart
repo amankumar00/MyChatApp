@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class ChatHeadsScreen extends StatefulWidget {
   static String id = '/';
@@ -54,9 +55,48 @@ class _ChatHeadsScreenState extends State<ChatHeadsScreen> {
                 ),
               ],
             ),
-            Container(
-              child: Text('data'),
-            )
+            Expanded(
+              child: ListView(
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.all(Radius.circular(30)),
+                            child: Image.asset(
+                              'images/profile_photo/aditya.jpeg',
+                              width: 60,
+                              height: 60,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Aditya Kumar',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                'Previous chat messages Appear here',
+                                style:
+                                    TextStyle(fontSize: 16, color: Colors.grey),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
